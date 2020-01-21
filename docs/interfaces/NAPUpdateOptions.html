@@ -1,0 +1,433 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>portal-template documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">portal-template documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content interface">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Interfaces</li>
+  <li>NAPUpdateOptions</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>projects/nap-interfaces/src/lib/napi.interfaces.ts</code>
+        </p>
+
+
+
+        <section>
+            <h3 id="index">Index</h3>
+            <table class="table table-sm table-bordered index-table">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Properties</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                            <span class="modifier">Optional</span>
+                                        <a href="#payload">payload</a>
+                                </li>
+                                <li>
+                                            <span class="modifier">Optional</span>
+                                        <a href="#unique">unique</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+
+            <section>
+                <h3 id="inputs">Properties</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="payload"></a>
+                                        <span class="name"><b>payload</b><a href="#payload"><span class="icon ion-ios-link"></span></a></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>payload:         <code><a href="../interfaces/NAPPayloadI.html" target="_self" >NAPPayloadI</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="../interfaces/NAPPayloadI.html" target="_self" >NAPPayloadI</a></code>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Optional</i>
+                                        </td>
+                                    </tr>
+
+
+
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>Um documento de Chave=&gt;Valor, serve para passar valores sem checagem no backend</p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="unique"></a>
+                                        <span class="name"><b>unique</b><a href="#unique"><span class="icon ion-ios-link"></span></a></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>unique:         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Optional</i>
+                                        </td>
+                                    </tr>
+
+
+
+
+                        </tbody>
+                    </table>
+            </section>
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">export interface NapResponse&lt;T&gt; {
+    status: &quot;success&quot; | &quot;error&quot;;
+    statusCode: number;
+    data?: T;
+    auth?: boolean;
+    resourcesAllowed?: any;
+}
+
+/**
+ * Documento de configuração para agrupamento de recurso
+ * 
+ * Exemplo:
+ * {
+ *    params: [
+ *      [&quot;COUNT&quot;, &quot;id&quot;, &quot;qtd&quot;], 
+ *      [&quot;DATE_FORMAT&quot;, &quot;_createdAt&quot;, &quot;%Y-%m&quot;, &quot;createdAt&quot;]
+ *    ], 
+ *    group: [&quot;createdAt&quot;], 
+ *    fields: [&quot;id&quot;, &quot;_createdAt&quot;]
+ *  }
+ * Usando Filtro: [&quot;id&quot;, &quot;&gt;&quot;, 200]
+ * 
+ * Será traduzido para:
+ * &quot;SELECT COUNT(&#x60;id&#x60;) as qtd, DATE_FORMAT(&#x60;_createdAt&#x60;, &quot;%Y-%m&quot;) as createdAt FROM [...] WHERE (&#x60;id&#x60;&gt;200) GROUP BY &#x60;createdAt&#x60;&quot;
+ */
+export interface NapAggregation {
+    /**
+     * Parametros para agrupamento. Os parametros serão convertidos numa query SQL
+     * O parametros recebe uma lista de array que tem a seguinte estrutura esperada:
+     * Caso o array tenha um filho, espera-se que seja um campo do registro.
+     * Caso tenha mais de um filho, o primeiro elemento do array será a função de agrupamento, o ultimo elemento será o alias e os elementos de 1 até n-1 serão parametros para a funcao de agrupamento. Se algum desses parametros forem fields, devera ser inserido no array de fields.
+     * 
+     * Exemplo: 
+     * [[&quot;count&quot;, &quot;id&quot;, &quot;qtd&quot;]]  &#x3D;&#x3D;(será convertido para)&#x3D;&gt;  COUNT(id) as qtd
+     * Obs.: id precisa ser escrito no array de &#x60;fields&#x60; para informar ao servidor que id é um campo e não um parametro
+     */
+    params: Array&lt;Array&lt;string&gt;&gt;;
+    /**
+     * Array de campos do registro, informa ao servidor o que é campo de registro para poder diferenciar de parametros de função
+     */
+    fields: Array&lt;string&gt;;
+    /**
+     * Caso precise agrupar, agrupar por alias inserido no params
+     */
+    group?: Array&lt;string&gt;;
+}
+
+
+////
+////// PERFIS DE REQUISICOES
+////
+
+export type NAPMiddleware &#x3D; (o: any) &#x3D;&gt; any;
+
+export interface NAPMiddlewaresProfiles {
+    [key: string]: Array&lt;NAPMiddleware&gt;;
+}
+
+////
+/////// OPCOES PARA REQUISICAO
+////
+
+export interface NAPLoginOptions {
+    sessionEngine?: string;
+    avoidAuth?: boolean;
+}
+export interface NAPLoginIdentities {
+    [key: string]: string | number;
+}
+export interface NAPResetPasswordOptions {
+    destUrl?: string;
+}
+
+//// OPCOES DE OPERACOES
+export interface NAPPayloadI {
+    [key: string]: any;
+}
+export interface NAPGroupOption {
+    selector: string;
+    desc: string;
+    isExpanded: boolean;
+}
+export interface NAPSortOption {
+    selector: string;
+    desc: boolean;
+}
+export interface NAPProjectionOption {
+    [key: string]: any;
+}
+
+/**
+ * Opções de requisição de Listagem
+ */
+export interface NAPListOptions {
+    /**
+     * Um documento de Chave&#x3D;&gt;Valor, serve para passar valores sem checagem no backend
+     */
+    payload?: NAPPayloadI;
+    /**
+     * @deprecated
+     */
+    group?: Array&lt;NAPGroupOption&gt;;
+    /**
+     * Configuração de Ordenação
+     */
+    sort?: Array&lt;NAPSortOption&gt;;
+    /**
+     * Quantidade de registros que será pulado.
+     * Exemplo: 
+     * {skip: 15}
+     * Listar registros a partir do registro de numero 15
+     */
+    skip?: number;
+    /**
+     * Quantidade de registros que se deseja obter
+     * Exemplo: 
+     * {take: 3}
+     * Listar 3 registros
+     */
+    take?: number;
+    /**
+     * @deprecated
+     */
+    projection?: NAPProjectionOption;
+    /**
+     * @deprecated
+     */
+    categories?: Array&lt;string&gt;;
+}
+export interface NAPReadOptions {
+    /**
+     * Um documento de Chave&#x3D;&gt;Valor, serve para passar valores sem checagem no backend
+     */
+    payload?: NAPPayloadI;
+}
+export interface NAPInsertOptions {
+    /**
+     * Um documento de Chave&#x3D;&gt;Valor, serve para passar valores sem checagem no backend
+     */
+    payload?: NAPPayloadI;
+}
+export interface NAPUpdateOptions {
+    /**
+     * Um documento de Chave&#x3D;&gt;Valor, serve para passar valores sem checagem no backend
+     */
+    payload?: NAPPayloadI;
+    /**
+     * @deprecated
+     */
+    unique?: boolean;
+}
+export interface NAPDeleteOptions {
+    /**
+     * Um documento de Chave&#x3D;&gt;Valor, serve para passar valores sem checagem no backend
+     */
+    payload?: NAPPayloadI;
+}
+export interface NAPAggregateOptions extends NAPListOptions {
+}
+
+////
+////// RECURSOS PERMITIDOS
+////
+
+export interface NapResAllowedWriteI {
+    name: string;
+    type?: string;
+    required?: boolean;
+    default?: any;
+    choices?: Array&lt;string | number&gt;;
+    label?: string;
+    description?: string;
+}
+
+export interface NapResAllowedReadI {
+    name: string;
+    type?: string;
+    label?: string;
+    description?: string;
+}
+
+export interface NapResOperationsAllowedI {
+    read?: Array&lt;string | NapResAllowedReadI&gt;;
+    insert?: Array&lt;string | NapResAllowedWriteI&gt;;
+    update?: Array&lt;string | NapResAllowedWriteI&gt;;
+    delete?: boolean;
+}
+
+export interface NapResourcesAllowedI {
+    [key: string]: NapResOperationsAllowedI;
+}
+
+
+// 
+//
+export type NAPFunctionFilter &#x3D; () &#x3D;&gt; Array&lt;any&gt;;</code></pre>
+    </div>
+</div>
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'interface';
+            var COMPODOC_CURRENT_PAGE_URL = 'NAPUpdateOptions.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

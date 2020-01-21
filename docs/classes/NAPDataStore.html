@@ -1,0 +1,1083 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>portal-template documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">portal-template documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content class">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Classes</li>
+  <li>NAPDataStore</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>projects/nap-dxstore/src/lib/nap-datastore.ts</code>
+        </p>
+
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>Documentação da classe no devextreme
+Procure por <code>CustomStore</code></p>
+<p>A diferença é a implementação do filtro, o filtro é capturado em tempo de execução no momento em que é feito o pedido de listagem dos campos</p>
+
+            </p>
+
+            <p class="comment">
+                <h3>Extends</h3>
+            </p>
+            <p class="comment">
+                    <code>CustomStore</code>
+            </p>
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#filter">filter</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#byKey">byKey</a>
+                            </li>
+                            <li>
+                                <a href="#getKeyFilter">getKeyFilter</a>
+                            </li>
+                            <li>
+                                <a href="#insert">insert</a>
+                            </li>
+                            <li>
+                                <a href="#key">key</a>
+                            </li>
+                            <li>
+                                <a href="#keyOf">keyOf</a>
+                            </li>
+                            <li>
+                                <a href="#load">load</a>
+                            </li>
+                            <li>
+                                <a href="#remove">remove</a>
+                            </li>
+                            <li>
+                                <a href="#totalCount">totalCount</a>
+                            </li>
+                            <li>
+                                <a href="#update">update</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(resource: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, conn: <a href="../injectables/NAPConnectionService.html">NAPConnectionService</a>, keysField: Array<string>, filter: <a href="../undefineds/NAPFunctionFilter.html">Array<any> | NAPFunctionFilter</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">projects/nap-dxstore/src/lib/nap-datastore.ts:12</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>resource</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>conn</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NAPConnectionService.html" target="_self" >NAPConnectionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>keysField</td>
+                                                  
+                                                        <td>
+                                                                    <code>Array&lt;string&gt;</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>filter</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../miscellaneous/typealiases.html#NAPFunctionFilter" target="_self" >Array&lt;any&gt; | NAPFunctionFilter</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="filter"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            filter</b>
+                            <a href="#filter"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../miscellaneous/typealiases.html#NAPFunctionFilter" target="_self" >Array&lt;any&gt; | NAPFunctionFilter</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">projects/nap-dxstore/src/lib/nap-datastore.ts:18</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="byKey"></a>
+                    <span class="name">
+                        <b>
+                            byKey
+                        </b>
+                        <a href="#byKey"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>byKey(key: any | string | number)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="24"
+                            class="link-to-prism">projects/nap-dxstore/src/lib/nap-datastore.ts:24</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Gets a data item with a specific key. </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>key</td>
+                                    <td>
+                                            <code>any | string | number</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getKeyFilter"></a>
+                    <span class="name">
+                        <b>
+                            getKeyFilter
+                        </b>
+                        <a href="#getKeyFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getKeyFilter(key: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="81"
+                            class="link-to-prism">projects/nap-dxstore/src/lib/nap-datastore.ts:81</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>key</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Array&lt;any&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="insert"></a>
+                    <span class="name">
+                        <b>
+                            insert
+                        </b>
+                        <a href="#insert"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>insert(values: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="64"
+                            class="link-to-prism">projects/nap-dxstore/src/lib/nap-datastore.ts:64</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Adds a data item to the store. </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>values</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="key"></a>
+                    <span class="name">
+                        <b>
+                            key
+                        </b>
+                        <a href="#key"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>key()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="51"
+                            class="link-to-prism">projects/nap-dxstore/src/lib/nap-datastore.ts:51</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Gets the key property (or properties) as specified in the key option. </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="keyOf"></a>
+                    <span class="name">
+                        <b>
+                            keyOf
+                        </b>
+                        <a href="#keyOf"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>keyOf(obj: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="55"
+                            class="link-to-prism">projects/nap-dxstore/src/lib/nap-datastore.ts:55</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Gets a data item&#39;s key value. </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>obj</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="load"></a>
+                    <span class="name">
+                        <b>
+                            load
+                        </b>
+                        <a href="#load"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>load(options?: DevExpress.data.LoadOptions)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="133"
+                            class="link-to-prism">projects/nap-dxstore/src/lib/nap-datastore.ts:133</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>options</td>
+                                    <td>
+                                            <code>DevExpress.data.LoadOptions</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="remove"></a>
+                    <span class="name">
+                        <b>
+                            remove
+                        </b>
+                        <a href="#remove"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>remove(key: any | string | number)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="115"
+                            class="link-to-prism">projects/nap-dxstore/src/lib/nap-datastore.ts:115</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Removes a data item with a specific key from the store. </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>key</td>
+                                    <td>
+                                            <code>any | string | number</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="totalCount"></a>
+                    <span class="name">
+                        <b>
+                            totalCount
+                        </b>
+                        <a href="#totalCount"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>totalCount(obj: literal type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="46"
+                            class="link-to-prism">projects/nap-dxstore/src/lib/nap-datastore.ts:46</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Gets the total count of items the load() function returns. </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>obj</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="update"></a>
+                    <span class="name">
+                        <b>
+                            update
+                        </b>
+                        <a href="#update"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>update(key: any | string | number, values: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="98"
+                            class="link-to-prism">projects/nap-dxstore/src/lib/nap-datastore.ts:98</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Updates a data item with a specific key. </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>key</td>
+                                    <td>
+                                            <code>any | string | number</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>values</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import DevExpress from &quot;devextreme/bundles/dx.all&quot;;
+import CustomStore from &quot;devextreme/data/custom_store&quot;;
+import { Deferred } from &#x27;jquery&#x27;;
+import { NAPConnectionService, NAPFunctionFilter } from &quot;nap-interfaces&quot;;
+
+/**
+ * Documentação da classe no devextreme
+ * Procure por &#x60;CustomStore&#x60;
+ * 
+ * A diferença é a implementação do filtro, o filtro é capturado em tempo de execução no momento em que é feito o pedido de listagem dos campos
+ */
+export class NAPDataStore extends CustomStore {
+
+    constructor(
+        protected resource: string, 
+        protected conn: NAPConnectionService, 
+        protected keysField: Array&lt;string&gt;, 
+        public filter: Array&lt;any&gt; | NAPFunctionFilter
+    ) {
+        super();
+    }
+
+    /** Gets a data item with a specific key. */
+    byKey(key: any | string | number): Promise&lt;any&gt; &amp; JQueryPromise&lt;any&gt; {
+        // used by outlook
+        // console.log(&quot;byKey&quot;, key);
+        const tempKeyValue &#x3D; key;
+        if (typeof tempKeyValue &#x3D;&#x3D;&#x3D; &quot;string&quot;) {
+            key &#x3D; {};
+            key[this.keysField[0]] &#x3D; tempKeyValue;
+        }
+        const dfd &#x3D; Deferred();
+        this.conn.list(this.resource, this.getKeyFilter(key)).then((resp) &#x3D;&gt; {
+            if (resp.status &#x3D;&#x3D; &quot;success&quot;) {
+                dfd.resolve(resp.data[0]);
+            } else {
+                let errorMsg: string &#x3D; resp.data[&quot;error&quot;] + &quot;: &quot; + resp.data[&quot;errorMessage&quot;];
+                dfd.reject(errorMsg);
+            }
+        }).catch((reason) &#x3D;&gt; {
+            dfd.reject(reason);
+        });
+        return dfd.promise() as any;
+    }
+    /** Gets the total count of items the load() function returns. */
+    totalCount(obj: { filter?: any, group?: any }): Promise&lt;number&gt; &amp; JQueryPromise&lt;number&gt; {
+        console.log(&quot;implement totalCount&quot;, obj);
+        return super.totalCount(obj);
+    }
+    /** Gets the key property (or properties) as specified in the key option. */
+    key(): any {
+        return this.keysField;
+    }
+    /** Gets a data item&#x27;s key value. */
+    keyOf(obj: any): any {
+        if (!obj) return {};
+        const objKey &#x3D; {};
+        this.keysField.forEach((keyField) &#x3D;&gt; {
+            objKey[keyField] &#x3D; obj[keyField];
+        });
+        return objKey;
+    }
+    /** Adds a data item to the store. */
+    insert(values: any): Promise&lt;any&gt; &amp; JQueryPromise&lt;any&gt; {
+        // console.log(&quot;insert&quot;, values);
+        const dfd &#x3D; Deferred();
+        delete values._id;
+        this.conn.insert(this.resource, values).then((resp) &#x3D;&gt; {
+            if (resp.status &#x3D;&#x3D; &quot;success&quot;) {
+                dfd.resolve(resp.data);
+            } else {
+                let errorMsg: string &#x3D; resp.data[&quot;error&quot;] + &quot;: &quot; + resp.data[&quot;errorMessage&quot;];
+                dfd.reject(errorMsg);
+            }
+        }).catch((reason) &#x3D;&gt; {
+            dfd.reject(reason);
+        });
+        return dfd.promise() as any;
+    }
+
+    getKeyFilter(key: any): Array&lt;any&gt; {
+        if (key instanceof Array) return key;
+        let filterKey: Array&lt;any&gt;;
+        if (typeof key &#x3D;&#x3D;&#x3D; &quot;number&quot; || typeof key &#x3D;&#x3D;&#x3D; &quot;string&quot;) {
+            filterKey &#x3D; [this.keysField[0], &#x27;&#x3D;&#x27;, key];
+        } else if (typeof key &#x3D;&#x3D;&#x3D; &quot;object&quot;) {
+            filterKey &#x3D; [];
+            for (const fieldKey in key) {
+                filterKey.push([fieldKey, &quot;&#x3D;&quot;, key[fieldKey]], &quot;AND&quot;);
+            }
+            filterKey.pop();
+            if (filterKey.length &#x3D;&#x3D;&#x3D; 1) filterKey &#x3D; filterKey[0];
+        }
+        return filterKey;
+    }
+
+    /** Updates a data item with a specific key. */
+    update(key: any | string | number, values: any): Promise&lt;any&gt; &amp; JQueryPromise&lt;any&gt; {
+        // console.log(&quot;update&quot;, key, values);
+        const dfd &#x3D; Deferred();
+        const filterKey &#x3D; this.getKeyFilter(key);
+        this.conn.update(this.resource, values, filterKey).then((resp) &#x3D;&gt; {
+            if (resp.status &#x3D;&#x3D; &quot;success&quot;) {
+                dfd.resolve(resp.data);
+            } else {
+                let errorMsg: string &#x3D; resp.data[&quot;error&quot;] + &quot;: &quot; + resp.data[&quot;errorMessage&quot;];
+                dfd.reject(errorMsg);
+            }
+        }).catch((reason) &#x3D;&gt; {
+            dfd.reject(reason);
+        });
+        return dfd.promise() as any;
+    }
+    /** Removes a data item with a specific key from the store. */
+    remove(key: any | string | number): Promise&lt;void&gt; &amp; JQueryPromise&lt;void&gt; {
+        const dfd &#x3D; Deferred();
+        const filterKey &#x3D; this.getKeyFilter(key);
+        this.conn.delete(this.resource, filterKey).then((resp) &#x3D;&gt; {
+            if (resp.status &#x3D;&#x3D; &quot;success&quot;) {
+                dfd.resolve(resp.data);
+            } else {
+                let errorMsg: string &#x3D; resp.data[&quot;error&quot;] + &quot;: &quot; + resp.data[&quot;errorMessage&quot;];
+                dfd.reject(errorMsg);
+            }
+        }).catch((reason) &#x3D;&gt; {
+            dfd.reject(reason);
+        });
+        return dfd.promise() as any;
+    }
+
+    //load(): Promise&lt;any&gt; &amp; JQueryPromise&lt;any&gt;; /** Starts loading data. */
+    //load(options: DevExpress.data.LoadOptions): Promise&lt;any&gt; &amp; JQueryPromise&lt;any&gt;; /** Starts loading data. */
+    load(options?: DevExpress.data.LoadOptions): Promise&lt;any&gt; &amp; JQueryPromise&lt;any&gt; {
+        // console.log(&quot;load&quot;, options);
+        const dfd &#x3D; Deferred();
+        let auxFilter &#x3D; this.filter;
+        if (typeof auxFilter &#x3D;&#x3D;&#x3D; &quot;function&quot;) auxFilter &#x3D; auxFilter();
+        this.conn.list(this.resource, auxFilter, options).then((resp) &#x3D;&gt; {
+            if (resp.status &#x3D;&#x3D; &quot;success&quot;) {
+                let totalCount: number;
+                if (resp[&quot;totalCount&quot;]) totalCount &#x3D; Number(resp[&quot;totalCount&quot;]);
+                else totalCount &#x3D; resp.data.length;
+                dfd.resolve({data: resp.data, totalCount: totalCount});
+                // dfd.resolve(resp.data);
+            } else {
+                let errorMsg: string &#x3D; resp.data[&quot;error&quot;] + &quot;: &quot; + resp.data[&quot;errorMessage&quot;];
+                dfd.reject(errorMsg);
+            }
+        }).catch((reason) &#x3D;&gt; {
+            dfd.reject(reason);
+        });
+        return dfd.promise() as any;
+    }
+}</code></pre>
+    </div>
+</div>
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
+            var COMPODOC_CURRENT_PAGE_URL = 'NAPDataStore.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

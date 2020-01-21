@@ -1,0 +1,1773 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>portal-template documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">portal-template documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content class">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Classes</li>
+  <li>NAPConnectionModel</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>projects/nap-interfaces/src/lib/nap-connection.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#middlewareAfterConn">middlewareAfterConn</a>
+                            </li>
+                            <li>
+                                <a href="#middlewaresBeforeConn">middlewaresBeforeConn</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#aggregate">aggregate</a>
+                            </li>
+                            <li>
+                                <a href="#delete">delete</a>
+                            </li>
+                            <li>
+                                <a href="#executionAfter">executionAfter</a>
+                            </li>
+                            <li>
+                                <a href="#executionBefore">executionBefore</a>
+                            </li>
+                            <li>
+                                <a href="#insert">insert</a>
+                            </li>
+                            <li>
+                                <a href="#list">list</a>
+                            </li>
+                            <li>
+                                <a href="#read">read</a>
+                            </li>
+                            <li>
+                                <a href="#update">update</a>
+                            </li>
+                            <li>
+                                <a href="#useAuth">useAuth</a>
+                            </li>
+                            <li>
+                                <a href="#with">with</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(conn: <a href="../injectables/NAPConnectionService.html">NAPConnectionService</a>, connAuthorization: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">projects/nap-interfaces/src/lib/nap-connection.service.ts:12</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>conn</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NAPConnectionService.html" target="_self" >NAPConnectionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>connAuthorization</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="middlewareAfterConn"></a>
+                        <span class="name">
+                            <b>
+                            middlewareAfterConn</b>
+                            <a href="#middlewareAfterConn"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../miscellaneous/typealiases.html#NAPMiddleware" target="_self" >Array&lt;NAPMiddleware&gt;</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">projects/nap-interfaces/src/lib/nap-connection.service.ts:17</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="middlewaresBeforeConn"></a>
+                        <span class="name">
+                            <b>
+                            middlewaresBeforeConn</b>
+                            <a href="#middlewaresBeforeConn"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../miscellaneous/typealiases.html#NAPMiddleware" target="_self" >Array&lt;NAPMiddleware&gt;</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">projects/nap-interfaces/src/lib/nap-connection.service.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="aggregate"></a>
+                    <span class="name">
+                        <b>
+                            aggregate
+                        </b>
+                        <a href="#aggregate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>aggregate(resource: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, aggregation: <a href="../interfaces/NapAggregation.html">NapAggregation</a>, filter?: Array<any>, options?: <a href="../interfaces/NAPAggregateOptions.html">NAPAggregateOptions</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="111"
+                            class="link-to-prism">projects/nap-interfaces/src/lib/nap-connection.service.ts:111</a></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Type parameters :</b>
+                    <ul class="type-parameters">
+                        <li>T</li>
+                        <li>R</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Faz um pedido de agrupamento de algum recurso no servidor</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>resource</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>do recurso, definido no servidor</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>aggregation</td>
+                                    <td>
+                                                <code><a href="../interfaces/NapAggregation.html" target="_self" >NapAggregation</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Configuração de agrupamento <code>NapAggregation</code></p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>filter</td>
+                                    <td>
+                                            <code>Array&lt;any&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                    <td>
+                                        <p>Filtro que é aplicado no agrupamento de recurso</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>options</td>
+                                    <td>
+                                                <code><a href="../interfaces/NAPAggregateOptions.html" target="_self" >NAPAggregateOptions</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                    <td>
+                                        <p>Opções de agrupamento</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;R&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="delete"></a>
+                    <span class="name">
+                        <b>
+                            delete
+                        </b>
+                        <a href="#delete"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>delete(resource: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, filter: Array<any>, options?: <a href="../interfaces/NAPDeleteOptions.html">NAPDeleteOptions</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="96"
+                            class="link-to-prism">projects/nap-interfaces/src/lib/nap-connection.service.ts:96</a></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Type parameters :</b>
+                    <ul class="type-parameters">
+                        <li>T</li>
+                        <li>R</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Faz uma exclusão de algum registro</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>resource</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Nome do recurso, definido no servidor</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>filter</td>
+                                    <td>
+                                            <code>Array&lt;any&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Filtro que é aplicado na exclusão de algum(s) registro, obrigatorio</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>options</td>
+                                    <td>
+                                                <code><a href="../interfaces/NAPDeleteOptions.html" target="_self" >NAPDeleteOptions</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                    <td>
+                                        <p>Opções de exclusão</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;R&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="executionAfter"></a>
+                    <span class="name">
+                        <b>
+                            executionAfter
+                        </b>
+                        <a href="#executionAfter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>executionAfter(o)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="27"
+                            class="link-to-prism">projects/nap-interfaces/src/lib/nap-connection.service.ts:27</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>o</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="executionBefore"></a>
+                    <span class="name">
+                        <b>
+                            executionBefore
+                        </b>
+                        <a href="#executionBefore"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>executionBefore(o)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="19"
+                            class="link-to-prism">projects/nap-interfaces/src/lib/nap-connection.service.ts:19</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>o</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="insert"></a>
+                    <span class="name">
+                        <b>
+                            insert
+                        </b>
+                        <a href="#insert"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>insert(resource: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, data: T, options?: <a href="../interfaces/NAPInsertOptions.html">NAPInsertOptions</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="67"
+                            class="link-to-prism">projects/nap-interfaces/src/lib/nap-connection.service.ts:67</a></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Type parameters :</b>
+                    <ul class="type-parameters">
+                        <li>T</li>
+                        <li>R</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Faz uma inserção para recurso informado</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>resource</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Nome do recurso, definido no servidor</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                            <code>T</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Dados do registro que será inserido no recurso informado</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>options</td>
+                                    <td>
+                                                <code><a href="../interfaces/NAPInsertOptions.html" target="_self" >NAPInsertOptions</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                    <td>
+                                        <p>Opções de inserção</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;R&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="list"></a>
+                    <span class="name">
+                        <b>
+                            list
+                        </b>
+                        <a href="#list"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>list(resource: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, filter?: Array<any>, options?: <a href="../interfaces/NAPListOptions.html">NAPListOptions</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="42"
+                            class="link-to-prism">projects/nap-interfaces/src/lib/nap-connection.service.ts:42</a></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Type parameters :</b>
+                    <ul class="type-parameters">
+                        <li>T</li>
+                        <li>R</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Faz uma requisição pedindo uma lista do recurso informado</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>resource</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Nome do recurso, definido no servidor</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>filter</td>
+                                    <td>
+                                            <code>Array&lt;any&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                    <td>
+                                        <p>Filtro a ser aplicado na listagem dos registros</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>options</td>
+                                    <td>
+                                                <code><a href="../interfaces/NAPListOptions.html" target="_self" >NAPListOptions</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                    <td>
+                                        <p>Opções a ser aplicado </p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;R&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="read"></a>
+                    <span class="name">
+                        <b>
+                            read
+                        </b>
+                        <a href="#read"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>read(resource: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, filter?: Array<any>, options?: <a href="../interfaces/NAPReadOptions.html">NAPReadOptions</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="53"
+                            class="link-to-prism">projects/nap-interfaces/src/lib/nap-connection.service.ts:53</a></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Type parameters :</b>
+                    <ul class="type-parameters">
+                        <li>T</li>
+                        <li>R</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>resource</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>filter</td>
+                                    <td>
+                                            <code>Array&lt;any&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>options</td>
+                                    <td>
+                                                <code><a href="../interfaces/NAPReadOptions.html" target="_self" >NAPReadOptions</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;R&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="update"></a>
+                    <span class="name">
+                        <b>
+                            update
+                        </b>
+                        <a href="#update"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>update(resource: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, data: T, filter: Array<any>, options?: <a href="../interfaces/NAPUpdateOptions.html">NAPUpdateOptions</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="82"
+                            class="link-to-prism">projects/nap-interfaces/src/lib/nap-connection.service.ts:82</a></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Type parameters :</b>
+                    <ul class="type-parameters">
+                        <li>T</li>
+                        <li>R</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Requer uma atualização de um ou mais registros de um recurso</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>resource</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Nome do recurso, definido no servidor</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                            <code>T</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Dados do registro que será atualizado, tipo chave:valor, onde chave será o valor que será atualizado e o valor é o novo valor</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>filter</td>
+                                    <td>
+                                            <code>Array&lt;any&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Filto que será aplicado na atualização do registro, por segurança não será aceito update sem filtro.</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>options</td>
+                                    <td>
+                                                <code><a href="../interfaces/NAPUpdateOptions.html" target="_self" >NAPUpdateOptions</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                    <td>
+                                        <p>Opções de atualização</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;R&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="useAuth"></a>
+                    <span class="name">
+                        <b>
+                            useAuth
+                        </b>
+                        <a href="#useAuth"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>useAuth(authorization: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="159"
+                            class="link-to-prism">projects/nap-interfaces/src/lib/nap-connection.service.ts:159</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Informa a requisição qual autorização do usuario o server deve dar preferencia</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>authorization</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>nome da authorizacao, cadastrado no server</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/NAPConnectionModel.html" target="_self" >NAPConnectionModel</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="with"></a>
+                    <span class="name">
+                        <b>
+                            with
+                        </b>
+                        <a href="#with"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>with(executionOf: <a href="../undefineds/NAPMiddleware.html">string | NAPMiddleware | Array<NAPMiddleware></a>, midPosition: <a href="../undefineds/NapMidExecLapse.html">NapMidExecLapse</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="128"
+                            class="link-to-prism">projects/nap-interfaces/src/lib/nap-connection.service.ts:128</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Cadastra o middleware para requisição</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>executionOf</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/typealiases.html#NAPMiddleware" target="_self" >string | NAPMiddleware | Array&lt;NAPMiddleware&gt;</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        <p>Middleware</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>midPosition</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/enumerations.html#NapMidExecLapse" target="_self" >NapMidExecLapse</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>NapMidExecLapse.always</code>
+                                    </td>
+
+                                    <td>
+                                        <p>Defini quando o middleware será executado. Default: always.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/NAPConnectionModel.html" target="_self" >NAPConnectionModel</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { HttpClient } from &#x27;@angular/common/http&#x27;;
+import { Subject } from &#x27;rxjs&#x27;;
+import { NapResponse, NapAggregation, NAPMiddleware, NAPMiddlewaresProfiles, NAPListOptions, NAPReadOptions, NAPInsertOptions, NAPUpdateOptions, NAPDeleteOptions, NAPAggregateOptions } from &#x27;./napi.interfaces&#x27;;
+
+export enum NapMidExecLapse {
+    onStart &#x3D; &quot;onStart&quot;,
+    onEnd &#x3D; &quot;onEnd&quot;,
+    always &#x3D; &quot;always&quot;
+}
+
+export class NAPConnectionModel {
+    
+    constructor(private conn: NAPConnectionService, private connAuthorization: string) {}
+
+    middlewaresBeforeConn: Array&lt;NAPMiddleware&gt; &#x3D; [];
+    middlewareAfterConn: Array&lt;NAPMiddleware&gt; &#x3D; [];
+
+    executionBefore(o) {
+        let i &#x3D; 0;
+        for (const middleware of this.middlewaresBeforeConn) {
+            o &#x3D; middleware({data: o, lapse: NapMidExecLapse.onStart, round: i});
+            i++;
+        }
+        return o;
+    }
+    executionAfter(o) {
+        let i &#x3D; 0;
+        for (const middleware of this.middlewareAfterConn) {
+            o &#x3D; middleware({data: o, lapse: NapMidExecLapse.onEnd, round: i});
+            i++;
+        }
+        return o;
+    }
+
+    /**
+     * Faz uma requisição pedindo uma lista do recurso informado
+     * @param resource Nome do recurso, definido no servidor
+     * @param filter Filtro a ser aplicado na listagem dos registros
+     * @param options Opções a ser aplicado 
+     */
+    list&lt;T &#x3D; any, R &#x3D; NapResponse&lt;Array&lt;T&gt;&gt;&gt;(resource: string, filter?: Array&lt;any&gt;, options?: NAPListOptions): Promise&lt;R&gt; {
+        let reqBody &#x3D; {resource: resource, operation: &quot;list&quot;, filter: filter, options: options, useAuth: this.connAuthorization};
+        reqBody &#x3D; this.executionBefore(reqBody);
+        return this.conn.makeResourceRequest(reqBody).then((resp) &#x3D;&gt; {
+            return this.executionAfter(resp)
+        });
+    }
+
+    /**
+     * @deprecated since version 2.0
+     */
+    read&lt;T &#x3D; any, R &#x3D; NapResponse&lt;Array&lt;T&gt;&gt;&gt;(resource: string, filter?: Array&lt;any&gt;, options?: NAPReadOptions): Promise&lt;R&gt; {
+        let reqBody &#x3D; {resource: resource, operation: &quot;read&quot;, filter: filter, options: options, useAuth: this.connAuthorization};
+        reqBody &#x3D; this.executionBefore(reqBody);
+        return this.conn.makeResourceRequest(reqBody).then((resp) &#x3D;&gt; {
+            return this.executionAfter(resp)
+        });
+    }
+
+    /**
+     * Faz uma inserção para recurso informado
+     * @param resource Nome do recurso, definido no servidor
+     * @param data Dados do registro que será inserido no recurso informado
+     * @param options Opções de inserção
+     */
+    insert&lt;T &#x3D; any, R &#x3D; NapResponse&lt;T&gt;&gt;(resource: string, data: T, options?: NAPInsertOptions): Promise&lt;R&gt; {
+        let reqBody &#x3D; {resource: resource, operation: &quot;insert&quot;, data: data, useAuth: this.connAuthorization, options: options};
+        reqBody &#x3D; this.executionBefore(reqBody);
+        return this.conn.makeResourceRequest(reqBody).then((resp) &#x3D;&gt; {
+            return this.executionAfter(resp)
+        });
+    }
+
+    /**
+     * Requer uma atualização de um ou mais registros de um recurso
+     * @param resource Nome do recurso, definido no servidor
+     * @param data Dados do registro que será atualizado, tipo chave:valor, onde chave será o valor que será atualizado e o valor é o novo valor
+     * @param filter Filto que será aplicado na atualização do registro, por segurança não será aceito update sem filtro.
+     * @param options Opções de atualização
+     */
+    update&lt;T &#x3D; any, R &#x3D; NapResponse&lt;T&gt;&gt;(resource: string, data: T, filter: Array&lt;any&gt;, options?: NAPUpdateOptions): Promise&lt;R&gt; {
+        let reqBody &#x3D; {resource: resource, operation: &quot;update&quot;, data: data, filter: filter, useAuth: this.connAuthorization, options: options};
+        reqBody &#x3D; this.executionBefore(reqBody);
+        return this.conn.makeResourceRequest(reqBody).then((resp) &#x3D;&gt; {
+            return this.executionAfter(resp)
+        });
+    }
+
+    /**
+     * Faz uma exclusão de algum registro
+     * @param resource Nome do recurso, definido no servidor
+     * @param filter Filtro que é aplicado na exclusão de algum(s) registro, obrigatorio
+     * @param options Opções de exclusão
+     */
+    delete&lt;T &#x3D; any, R &#x3D; NapResponse&lt;T&gt;&gt;(resource: string, filter: Array&lt;any&gt;, options?: NAPDeleteOptions): Promise&lt;R&gt; {
+        let reqBody &#x3D; {resource: resource, operation: &quot;delete&quot;, filter: filter, useAuth: this.connAuthorization, options: options};
+        reqBody &#x3D; this.executionBefore(reqBody);
+        return this.conn.makeResourceRequest(reqBody).then((resp) &#x3D;&gt; {
+            return this.executionAfter(resp)
+        });
+    }
+
+    /**
+     * Faz um pedido de agrupamento de algum recurso no servidor
+     * @param resource do recurso, definido no servidor
+     * @param aggregation Configuração de agrupamento &#x60;NapAggregation&#x60;
+     * @param filter Filtro que é aplicado no agrupamento de recurso
+     * @param options Opções de agrupamento
+     */
+    aggregate&lt;T &#x3D; any, R &#x3D; NapResponse&lt;T&gt;&gt;(resource: string, aggregation: NapAggregation, filter?: Array&lt;any&gt;, options?: NAPAggregateOptions): Promise&lt;R&gt; {
+        let reqBody &#x3D; {resource: resource, operation: &quot;aggregate&quot;, aggregation: aggregation, filter: filter, useAuth: this.connAuthorization, options: options};
+        reqBody &#x3D; this.executionBefore(reqBody);
+        return this.conn.makeResourceRequest(reqBody).then((resp) &#x3D;&gt; {
+            return this.executionAfter(resp)
+        });
+    }
+
+    //
+    //// MID OPERATIONS
+    //
+
+    /**
+     * Cadastra o middleware para requisição
+     * @param executionOf Middleware
+     * @param midPosition Defini quando o middleware será executado. Default: always.
+     */
+    with(executionOf: string | NAPMiddleware | Array&lt;NAPMiddleware&gt;, midPosition: NapMidExecLapse &#x3D; NapMidExecLapse.always): NAPConnectionModel {
+
+        if (typeof executionOf &#x3D;&#x3D;&#x3D; &quot;string&quot;) {
+            if (!this.conn.middlewaresBeforeProfile[executionOf] &amp;&amp; !this.conn.middlewaresAfterProfile[executionOf]) {
+                console.warn(&quot;Profile &quot;+executionOf+&quot; not found! Connection will procede ignoring this profile.&quot;);
+                return this;
+            }
+            if (midPosition &#x3D;&#x3D;&#x3D; NapMidExecLapse.always || midPosition &#x3D;&#x3D;&#x3D; NapMidExecLapse.onStart) this.middlewaresBeforeConn &#x3D; this.middlewaresBeforeConn.concat(this.conn.middlewaresBeforeProfile[executionOf] || []);
+            if (midPosition &#x3D;&#x3D;&#x3D; NapMidExecLapse.always || midPosition &#x3D;&#x3D;&#x3D; NapMidExecLapse.onEnd) this.middlewareAfterConn &#x3D; this.middlewareAfterConn.concat(this.conn.middlewaresAfterProfile[executionOf] || []);
+            return this;
+        }
+
+        if (executionOf instanceof Array) {
+            if (midPosition &#x3D;&#x3D;&#x3D; NapMidExecLapse.always || midPosition &#x3D;&#x3D;&#x3D; NapMidExecLapse.onStart) this.middlewaresBeforeConn &#x3D; this.middlewaresBeforeConn.concat(executionOf);
+            if (midPosition &#x3D;&#x3D;&#x3D; NapMidExecLapse.always || midPosition &#x3D;&#x3D;&#x3D; NapMidExecLapse.onEnd) this.middlewareAfterConn &#x3D; this.middlewareAfterConn.concat(executionOf);
+            return this;
+        }
+        
+        if (typeof executionOf &#x3D;&#x3D;&#x3D; &quot;function&quot;) {
+            if (midPosition &#x3D;&#x3D;&#x3D; NapMidExecLapse.always || midPosition &#x3D;&#x3D;&#x3D; NapMidExecLapse.onStart) this.middlewaresBeforeConn &#x3D; this.middlewaresBeforeConn.concat([executionOf]);
+            if (midPosition &#x3D;&#x3D;&#x3D; NapMidExecLapse.always || midPosition &#x3D;&#x3D;&#x3D; NapMidExecLapse.onEnd) this.middlewareAfterConn &#x3D; this.middlewareAfterConn.concat([executionOf]);
+            return this;
+        }
+        
+        throw new Error(&quot;method &#x27;.with(..)&#x27;: Invalid input&quot;);
+    }
+
+    /**
+     * Informa a requisição qual autorização do usuario o server deve dar preferencia
+     * @param authorization nome da authorizacao, cadastrado no server
+     */
+    useAuth(authorization: string): NAPConnectionModel {
+        this.connAuthorization &#x3D; authorization;
+        return this;
+    }
+}
+
+@Injectable()
+export class NAPConnectionService {
+
+    protected RURN: string &#x3D; &quot;/noapi/resources&quot;;
+    protected AURN: string &#x3D; &quot;/noapi/auth&quot;;
+    protected HOST: string &#x3D; &quot;&quot;;
+    protected _AUTH_URL: string;
+    protected _RESOURCE_URL: string;
+
+    middlewaresBeforeProfile: NAPMiddlewaresProfiles &#x3D; {};
+    middlewaresAfterProfile: NAPMiddlewaresProfiles &#x3D; {};
+    defaultProfile: string &#x3D; null;
+
+    /**
+     * Lista de ordem de permissões, para preferencia de recursos no server
+     */
+    xNapPermissionOrder: Array&lt;string&gt; &#x3D; [];
+    
+
+    private _authenticated: boolean &#x3D; false;
+    set authenticated(auth: boolean) {
+        if (auth &#x3D;&#x3D;&#x3D; this._authenticated) return;
+        this._authenticated &#x3D; auth;
+        this.authenticatedChange.next(this._authenticated);
+    }
+    get authenticated(): boolean {
+        return this._authenticated;
+    }
+    authenticatedChange: Subject&lt;boolean&gt; &#x3D; new Subject();
+
+    defaultAuthorization: string;
+
+    constructor(private http: HttpClient) {
+        this.calcuteURLs();
+    }
+
+
+    /**
+     * Cadastra middlewares de execução anteriores a requisição
+     * @param profile Nome do perfil que será cadastrado
+     * @param middlewares Lista de middlewares
+     */
+    createBeforeMiddlewareProfile(profile: string, middlewares: Array&lt;NAPMiddleware&gt;) {
+        this.middlewaresBeforeProfile[profile] &#x3D; middlewares;
+    }
+    /**
+     * Cadastra lista de middlewares posteriores a requisição
+     * @param profile Nome do perfil que será cadastrado
+     * @param middlewares Lista de middlewares
+     */
+    createAfterMiddlewareProfile(profile: string, middlewares: Array&lt;NAPMiddleware&gt;) {
+        this.middlewaresAfterProfile[profile] &#x3D; middlewares;
+    }
+    /**
+     * Perfil de middlewares para ser desintegrado
+     * @param profile Nome do perfil
+     */
+    dropMiddlewareProfile(profile: string) {
+        this.middlewaresBeforeProfile[profile] &#x3D; null;
+        this.middlewaresAfterProfile[profile] &#x3D; null;
+    }
+
+
+    /**
+     * Reliza a requisição
+     * Retorno: Uma promise de NapResponse
+     * @param URL informação para onde será feito a requisição
+     * @param reqBody corpo da requisição
+     */
+    makeRequest(URL: string, reqBody: Array&lt;any&gt; | object): Promise&lt;NapResponse&lt;any&gt;&gt; {
+        const responseObservable &#x3D; this.http.post&lt;NapResponse&lt;any&gt;&gt;(URL, reqBody, {
+            headers: {
+                &quot;x-nap-permission-order&quot;: this.xNapPermissionOrder.join(&quot;,&quot;)
+            }
+        });
+        const prom &#x3D; responseObservable.toPromise();
+        prom.then((response) &#x3D;&gt; {
+            response.auth &#x3D; !!response.auth;
+            if (this.authenticated !&#x3D;&#x3D; response.auth) {
+                this.authenticated &#x3D; response.auth;
+            }
+        });
+        return prom;
+    }
+
+    private calcuteURLs() {
+        this._AUTH_URL &#x3D; this.HOST + this.AURN;
+        this._RESOURCE_URL &#x3D; this.HOST + this.RURN;
+    }
+
+    /**
+     * Resource URN por padrão é &quot;/noapi/resources&quot;, essa variável é concatenada em cada requisição feita para algum recurso no backend
+     * @param path caminho para acesso de recurso
+     */
+    setResourceURN(path: string) {
+        if (path[0] !&#x3D;&#x3D; &quot;/&quot;) path &#x3D; &quot;/&quot; + path;
+        this.RURN &#x3D; path;
+        this.calcuteURLs();
+    }
+
+    /**
+     * Auth URN por padrão é &quot;/noapi/auth&quot;, essa variável é responsável em requisições para chamadas de authenticação ou dados do usuário que está logado
+     * @param path caminho para acesso ao auth
+     */
+    setAuthURN(path: string) {
+        if (path[0] !&#x3D;&#x3D; &quot;/&quot;) path &#x3D; &quot;/&quot; + path;
+        this.AURN &#x3D; path;
+        this.calcuteURLs();
+    }
+
+    /**
+     * Resposável por informar a classe qual o host que deve ser enviado as requisições, por padrão o host é &quot;/&quot;, ou seja o mesmo no domínio onde o site está hospedado,
+     * no entanto no app é necessário setar o host.
+     * @param host endereço do host
+     */
+    setHost(host: string) {
+        if (host[host.length-1] &#x3D;&#x3D;&#x3D; &quot;/&quot;) host &#x3D; host.substr(0, host.length-1);
+        this.HOST &#x3D; host;
+        this.calcuteURLs();
+    }
+
+    /**
+     * Faz requisição para recurso, obtém o endereço da requisição internamente
+     * @param reqBody Corpo da requisição
+     */
+    makeResourceRequest(reqBody: Array&lt;any&gt; | object) {
+        return this.makeRequest(this._RESOURCE_URL, reqBody);
+    }
+
+    /**
+     * Faz Requisição para auth, obtém o endereço da chamada internamente
+     * @param reqBody Corpo da requisição
+     */
+    makeAuthRequest(reqBody: Array&lt;any&gt; | object) {
+        return this.makeRequest(this._AUTH_URL, reqBody);
+    }
+    
+    /**
+     * Retorna uma instancia de &#x60;NAPConnectionModel&#x60; com middlewares pre definidos
+     */
+    getDefaultConnection(): NAPConnectionModel {
+        const connInstance &#x3D; new NAPConnectionModel(this, this.defaultAuthorization);
+        connInstance.middlewaresBeforeConn &#x3D; this.middlewaresBeforeProfile[this.defaultProfile] || [];
+        connInstance.middlewareAfterConn &#x3D; this.middlewaresAfterProfile[this.defaultProfile] || [];
+        return connInstance;
+    }
+
+    ///////
+    ///////  RESOURCES
+    ///////
+
+    /**
+     * Faz uma requisição pedindo uma lista do recurso informado
+     * @param resource Nome do recurso, definido no servidor
+     * @param filter Filtro a ser aplicado na listagem dos registros
+     * @param options Opções a ser aplicado 
+     */
+    list&lt;T&gt;(resource: string, filter?: Array&lt;any&gt;, options?: NAPListOptions): Promise&lt;NapResponse&lt;Array&lt;T&gt;&gt;&gt; {
+        const connInstance &#x3D; this.getDefaultConnection();
+        return connInstance.list&lt;T&gt;(resource, filter, options);
+    }
+    
+    /**
+     * @deprecated since version 2.0
+     */
+    read&lt;T&gt;(resource: string, filter?: Array&lt;any&gt;, options?: NAPReadOptions): Promise&lt;NapResponse&lt;Array&lt;T&gt;&gt;&gt; {
+        const connInstance &#x3D; this.getDefaultConnection();
+        return connInstance.read&lt;T&gt;(resource, filter, options);
+    }
+
+    /**
+     * Faz uma inserção para recurso informado
+     * @param resource Nome do recurso, definido no servidor
+     * @param data Dados do registro que será inserido no recurso informado
+     * @param options Opções de inserção
+     */
+    insert&lt;T&gt;(resource: string, data: T, options?: NAPInsertOptions): Promise&lt;NapResponse&lt;T&gt;&gt; {
+        const connInstance &#x3D; this.getDefaultConnection();
+        return connInstance.insert&lt;T&gt;(resource, data, options);
+    }
+
+    /**
+     * Requer uma atualização de um ou mais registros de um recurso
+     * @param resource Nome do recurso, definido no servidor
+     * @param data Dados do registro que será atualizado, tipo chave:valor, onde chave será o valor que será atualizado e o valor é o novo valor
+     * @param filter Filto que será aplicado na atualização do registro, por segurança não será aceito update sem filtro.
+     * @param options Opções de atualização
+     */
+    update&lt;T&gt;(resource: string, data: T, filter: Array&lt;any&gt;, options?: NAPUpdateOptions): Promise&lt;NapResponse&lt;T&gt;&gt; {
+        const connInstance &#x3D; this.getDefaultConnection();
+        return connInstance.update&lt;T&gt;(resource, data, filter, options);
+    }
+
+    /**
+     * Faz uma exclusão de algum registro
+     * @param resource Nome do recurso, definido no servidor
+     * @param filter Filtro que é aplicado na exclusão de algum(s) registro, obrigatorio
+     * @param options Opções de exclusão
+     */
+    delete&lt;T&gt;(resource: string, filter: Array&lt;any&gt;, options?: NAPDeleteOptions): Promise&lt;NapResponse&lt;T&gt;&gt; {
+        const connInstance &#x3D; this.getDefaultConnection();
+        return connInstance.delete&lt;T&gt;(resource, filter, options);
+    }
+
+    /**
+     * Faz um pedido de agrupamento de algum recurso no servidor
+     * @param resource do recurso, definido no servidor
+     * @param aggregation Configuração de agrupamento &#x60;NapAggregation&#x60;
+     * @param filter Filtro que é aplicado no agrupamento de recurso
+     * @param options Opções de agrupamento
+     */
+    aggregate&lt;T&gt;(resource: string, aggregation: NapAggregation, filter?: Array&lt;any&gt;, options?: NAPAggregateOptions): Promise&lt;NapResponse&lt;T&gt;&gt; {
+        const connInstance &#x3D; this.getDefaultConnection();
+        return connInstance.aggregate&lt;T&gt;(resource, aggregation, filter, options);
+    }
+
+    /**
+     * Cadastra o middleware para requisição
+     * @param executionOf Middleware
+     * @param midPosition Defini quando o middleware será executado. Default: always.
+     */
+    with(executionOf: string | NAPMiddleware | Array&lt;NAPMiddleware&gt;, midPosition: NapMidExecLapse &#x3D; NapMidExecLapse.always) {
+        const connInstance &#x3D; this.getDefaultConnection();
+        return connInstance.with(executionOf, midPosition);
+    }
+    
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
+            var COMPODOC_CURRENT_PAGE_URL = 'NAPConnectionModel.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
