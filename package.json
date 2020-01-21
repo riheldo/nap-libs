@@ -3,9 +3,7 @@
     "version": "0.0.0",
     "scripts": {
         "ng": "ng",
-        "start": "ng serve --port 4205",
-        "start:proxy": "ng serve --port 4205 --proxy-config proxy.conf.js",
-        "build": "ng build",
+        "build-docs": "compodoc -p tsconfig.json -e -d docs",
         "publish:nap-interfaces": "ng build nap-interfaces && npm publish dist/nap-interfaces",
         "publish:nap-dxstore": "ng build nap-dxstore && npm publish dist/nap-dxstore"
     },
