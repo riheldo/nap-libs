@@ -1,0 +1,87 @@
+{
+    "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+    "version": 1,
+    "newProjectRoot": "projects",
+    "projects": {
+        "nap-interfaces": {
+            "root": "projects/nap-interfaces",
+            "sourceRoot": "projects/nap-interfaces/src",
+            "projectType": "library",
+            "prefix": "lib",
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-ng-packagr:build",
+                    "options": {
+                        "tsConfig": "projects/nap-interfaces/tsconfig.lib.json",
+                        "project": "projects/nap-interfaces/ng-package.json"
+                    },
+                    "configurations": {
+                        "production": {
+                            "project": "projects/nap-interfaces/ng-package.prod.json"
+                        }
+                    }
+                },
+                "test": {
+                    "builder": "@angular-devkit/build-angular:karma",
+                    "options": {
+                        "main": "projects/nap-interfaces/src/test.ts",
+                        "tsConfig": "projects/nap-interfaces/tsconfig.spec.json",
+                        "karmaConfig": "projects/nap-interfaces/karma.conf.js"
+                    }
+                },
+                "lint": {
+                    "builder": "@angular-devkit/build-angular:tslint",
+                    "options": {
+                        "tsConfig": [
+                            "projects/nap-interfaces/tsconfig.lib.json",
+                            "projects/nap-interfaces/tsconfig.spec.json"
+                        ],
+                        "exclude": [
+                            "**/node_modules/**"
+                        ]
+                    }
+                }
+            }
+        },
+        "nap-dxstore": {
+            "root": "projects/nap-dxstore",
+            "sourceRoot": "projects/nap-dxstore/src",
+            "projectType": "library",
+            "prefix": "lib",
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-ng-packagr:build",
+                    "options": {
+                        "tsConfig": "projects/nap-dxstore/tsconfig.lib.json",
+                        "project": "projects/nap-dxstore/ng-package.json"
+                    },
+                    "configurations": {
+                        "production": {
+                            "project": "projects/nap-dxstore/ng-package.prod.json"
+                        }
+                    }
+                },
+                "test": {
+                    "builder": "@angular-devkit/build-angular:karma",
+                    "options": {
+                        "main": "projects/nap-dxstore/src/test.ts",
+                        "tsConfig": "projects/nap-dxstore/tsconfig.spec.json",
+                        "karmaConfig": "projects/nap-dxstore/karma.conf.js"
+                    }
+                },
+                "lint": {
+                    "builder": "@angular-devkit/build-angular:tslint",
+                    "options": {
+                        "tsConfig": [
+                            "projects/nap-dxstore/tsconfig.lib.json",
+                            "projects/nap-dxstore/tsconfig.spec.json"
+                        ],
+                        "exclude": [
+                            "**/node_modules/**"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

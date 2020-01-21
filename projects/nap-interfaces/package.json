@@ -1,0 +1,10 @@
+{
+  "name": "nap-interfaces",
+  "version": "1.2.2",
+  "peerDependencies": {
+    "@angular/common": "6.x || 7.x || 8.x",
+    "@angular/core": "6.x || 7.x || 8.x",
+    "@angular/router": "6.x || 7.x || 8.x",
+    "rxjs": "6.x"
+  }
+}

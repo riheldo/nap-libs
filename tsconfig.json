@@ -1,0 +1,52 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "downlevelIteration": true,
+    "importHelpers": true,
+    "module": "esnext",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2015",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "paths": {
+      "globalize": [
+        "node_modules/globalize/dist/globalize"
+      ],
+      "globalize/*": [
+        "node_modules/globalize/dist/globalize/*"
+      ],
+      "cldr": [
+        "node_modules/cldrjs/dist/cldr"
+      ],
+      "cldr/*": [
+        "node_modules/cldrjs/dist/cldr/*"
+      ],
+      "jszip": [
+        "node_modules/jszip/dist/jszip.min.js"
+      ],
+      "nap-interfaces": [
+        "dist/nap-interfaces"
+      ],
+      "nap-interfaces/*": [
+        "dist/nap-interfaces/*"
+      ],
+      "nap-dxstore": [
+        "dist/nap-dxstore"
+      ],
+      "nap-dxstore/*": [
+        "dist/nap-dxstore/*"
+      ]
+    }
+  }
+}
